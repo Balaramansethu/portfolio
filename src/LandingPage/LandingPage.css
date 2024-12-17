@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+}
+.whole-container{
+    color: white;
+    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+        background-color: #030712;
+        min-height: 100vh; /* Ensures it covers full viewport height */
+    width: 100%; /* Ensures it stretches across full width */
+
+}
+.section-container{
+    color: white;
+    background-image: 
+    linear-gradient(90deg, rgba(31, 41, 55, 0.2) 1px, transparent 0), 
+    linear-gradient(180deg, rgba(31, 41, 55, 0.2) 1px, transparent 0);
+    min-height: 100vh; /* Ensures it covers full viewport height */
+    width: 100%; /* Ensures it stretches across full width */
+}
+
+.pad-cont{
+  padding-left: 7.5rem;
+}
