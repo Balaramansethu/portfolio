@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../LandingPage/LandingPage.css";
 import ImageBala from "../assets/image-port.jpg";
+import ProjectsFeatured from "./ProjectsFeatured";
 const LandingPage = () => {
   const [tooltip, setTooltip] = useState("Copy");
 
@@ -75,15 +76,15 @@ const LandingPage = () => {
                       <div>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <span className="text-green-400">role:</span> "Software
-                        Engineer,
+                        Engineer",
                         <br />
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <span className="text-green-400">focus:</span> "Web
-                        Developer,
+                        Developer",
                         <br />
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <span className="text-green-400">expertise:</span>{" "}
-                        "Frontend Development
+                        "Frontend Development"
                         <br /> &nbsp;&nbsp; &nbsp;&nbsp;{`}`}
                       </div>
                       <div className="flex items-start space-x-2">
@@ -113,7 +114,7 @@ const LandingPage = () => {
                   <div className="space-y-2 opacity-100">
                     <div className="font-mono text-sm text-gray-400">
                       <span className="font-mono relative opacity-100">
-                        "$ user.skills"<span class="text-blue-400">_</span>
+                        $ user.skills<span class="text-blue-400">_</span>
                       </span>
                     </div>
                     <div className="flex flex-wrap justify-center lg:justify-start gap-3">
@@ -154,7 +155,7 @@ const LandingPage = () => {
                           <line x1="6" x2="6.01" y1="6" y2="6"></line>
                         </svg>
                         <span className="font-mono text-[#8b949e]">
-                          REST API
+                          Rest api
                         </span>
                       </div>
                       <div
@@ -395,7 +396,10 @@ const LandingPage = () => {
           </div>
         </div>
       </div>
-      {/* implement projects featured here */}
+      <div>
+      <div class="relative bg-gray-50/50 dark:bg-gray-800/50 pb-1"></div>
+        <ProjectsFeatured/>
+      </div>
     </div>
   );
 };
