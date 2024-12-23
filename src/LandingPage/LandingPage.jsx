@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../LandingPage/LandingPage.css";
 import ImageBala from "../assets/image-port.jpg";
 import ProjectsFeatured from "./ProjectsFeatured";
+import ContactMe from "./ContactMe/ContactMe";
 const LandingPage = () => {
   const [tooltip, setTooltip] = useState("Copy");
 
@@ -399,6 +400,8 @@ const LandingPage = () => {
       <div>
       <div class="relative bg-gray-50/50 dark:bg-gray-800/50 pb-1"></div>
         <ProjectsFeatured/>
+        <div class="relative bg-gray-50/50 dark:bg-gray-800/50 pb-1"></div>
+        <ContactMe/>
       </div>
     </div>
   );
