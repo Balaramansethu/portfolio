@@ -20,8 +20,7 @@ const ContactMe = () => {
             <div className="space-y-1">
               <div className="text-blue-500 text-lg"># Let's Connect!</div>
               <div className="text-base text-[#8b949e]">
-                "Currently building data pipelines and ML systems. Open to
-                discussing interesting projects and opportunities."
+                "Currently building web applications and exploring new technologies. Open to discussing interesting projects and opportunities"
               </div>
             </div>
             <div className="space-y-4 pt-4">
@@ -50,7 +49,7 @@ const ContactMe = () => {
                       <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"></path>
                       <path d="M9 18c-4.51 2-5-2-7-2"></path>
                     </svg>
-                    <span class="group-hover:underline">Balaramansethu</span>
+                    <span class="group-hover:no-underline">Balaramansethu</span>
                   </a>
                 </div>
                 <div class="group">
@@ -76,7 +75,7 @@ const ContactMe = () => {
                       <rect width="4" height="12" x="2" y="9"></rect>
                       <circle cx="4" cy="4" r="2"></circle>
                     </svg>
-                    <span class="group-hover:underline">Balaraman</span>
+                    <span class="group-hover:no-underline">Balaraman</span>
                   </a>
                 </div>
                 <div class="group">
@@ -99,7 +98,7 @@ const ContactMe = () => {
                       <rect width="20" height="16" x="2" y="4" rx="2"></rect>
                       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
                     </svg>
-                    <span class="group-hover:underline">
+                    <span class="group-hover:no-underline">
                       baalaaraman@gmail.com
                     </span>
                   </a>

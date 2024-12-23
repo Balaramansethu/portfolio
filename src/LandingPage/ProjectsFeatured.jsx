@@ -13,16 +13,16 @@ const ProjectsFeatured = () => {
 
   const getHoverText = () => {
     switch (hoveredTech) {
-      case 'Data Sources':
-        return ' over steps to explore the pipeline';
-      case 'AWS S3 Data Lake':
-        return 'Data Lake Setup';
-      case 'Spark Processing':
-        return 'Big Data Processing';
-      case 'BI Tools':
-        return 'Analytics and Report';
-      case 'Snowflake DW':
-        return 'Data Warehouse Setup';
+      case 'React.js':
+        return 'Library for building dynamic, component-based UIs.';
+      case 'HTML':
+        return 'Markup language for creating web page structure.';
+      case 'CSS':
+        return 'Stylesheets for designing visually appealing and responsive layouts.';
+      case 'Vite':
+        return 'A modern build tool for fast and optimized frontend development.';
+      case 'Vercel':
+        return 'Deployment platform for applications with fast, serverless hosting.';
       default:
         return 'Hover over steps to explore';
     }
@@ -53,7 +53,7 @@ const ProjectsFeatured = () => {
                     </div>
                   </div>
                   <div className="relative h-full flex flex-col justify-center space-y-8 pb-24">
-                    {['Data Sources', 'AWS S3 Data Lake', 'Spark Processing', 'BI Tools', 'Snowflake DW'].map((tech, index) => (
+                    {['React.js', 'HTML', 'CSS', 'Vite', 'Vercel'].map((tech, index) => (
                       <div
                         key={index}
                         className="flex items-center space-x-3 text-gray-400"
@@ -90,8 +90,8 @@ const ProjectsFeatured = () => {
                     <div className="font-mono text-sm text-gray-400 mb-1">
                        <span>{` $ project[1].info`}</span>
                     </div>
-                    <h3 className="text-2xl font-bold text-[#e6edf3]">Enterprise Data Lake Migration</h3>
-                    <span className="inline-block text-blue-400 px-3 py-1  text-sm font-mono mb-2">Technical Lead</span>
+                    <h3 className="text-2xl font-bold text-[#e6edf3]">Visual Ease : Data structure and algorithm visualization</h3>
+                    <span className="inline-block text-blue-400 px-3 py-1  text-sm font-mono mb-2">Developer</span>
                   </div>
                   <div className="flex gap-4">
                       <a href="https://github.com/Balaramansethu" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -103,34 +103,34 @@ const ProjectsFeatured = () => {
                   </div>
                 </div>
                 <p className="text-gray-400 mb-4 font-mono leading-relaxed text-[#8b949e]">
-                  "Led the migration of a legacy data warehouse to a modern cloud-based data lake architecture, improving query performance by 60% and reducing storage costs by 40%."
+                "Built a React application for visualizing algorithms, enhancing understanding of data structures and algorithm behavior for developers and students."
                 </p>
                 <div className="mb-4">
                   <div className="font-mono text-sm text-gray-400 mb-2">$ project.impact</div>
                   <ul className="space-y-1 text-gray-400 font-mono">
-                    <li class="flex items-center">
+                    <li class="flex items-start">
                       <span class="text-green-400 mr-2">→</span>
-                      "Reduced data processing time from hours to minutes"
+                      "Improved learning efficiency for data structure concepts through real-time visualizations."
                     </li>
-                    <li class="flex items-center">
+                    <li class="flex items-start">
                     <span class="text-green-400 mr-2">→</span>
-                    "Reduced data processing time from hours to minutes"                      
+                    "Provided interactive and customizable algorithm simulations."                      
                     </li>
-                    <li class="flex items-center">
+                    <li class="flex items-start">
                     <span class="text-green-400 mr-2">→</span>
-                    "Reduced data processing time from hours to minutes"                      
+                    "Designed an intuitive and responsive user interface for seamless user experience."                      
                     </li>
                   </ul>
                 </div>
                 <div className="mb-4">
                   <div className="font-mono text-sm text-gray-400 mb-2">$ project.stack</div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">AWS S3</span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Snowflake</span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Apache Spark</span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Python</span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">dbt</span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Airflow</span>
+                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">ReactJs</span>
+                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">ThreeJs</span>
+                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">HTML</span>
+                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">CSS</span>
+                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Vite</span>
+                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Vercel</span>
                   </div>
                 </div>
               </div>
@@ -153,7 +153,7 @@ const ProjectsFeatured = () => {
                     </div>
                   </div>
                   <div className="relative h-full flex flex-col justify-center space-y-8 pb-24">
-                    {['Data Sources', 'AWS S3 Data Lake', 'Spark Processing', 'BI Tools', 'Snowflake DW'].map((tech, index) => (
+                    {['React.js', 'HTML', 'CSS', 'Vite', 'Vercel'].map((tech, index) => (
                       <div
                         key={index}
                         className="flex items-center space-x-3 text-gray-400"
@@ -190,8 +190,8 @@ const ProjectsFeatured = () => {
                     <div className="font-mono text-sm text-gray-400 mb-1">
                        <span>{` $ project[1].info`}</span>
                     </div>
-                    <h3 className="text-2xl font-bold text-[#e6edf3]">Enterprise Data Lake Migration</h3>
-                    <span className="inline-block text-blue-400 px-3 py-1  text-sm font-mono mb-2">Technical Lead</span>
+                    <h3 className="text-2xl font-bold text-[#e6edf3]">Behance Clone</h3>
+                    <span className="inline-block text-blue-400 px-3 py-1  text-sm font-mono mb-2">Developer</span>
                   </div>
                   <div className="flex gap-4">
                       <a href="https://github.com/Balaramansethu" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-blue-400 transition-colors">
@@ -203,34 +203,30 @@ const ProjectsFeatured = () => {
                   </div>
                 </div>
                 <p className="text-gray-400 mb-4 font-mono leading-relaxed text-[#8b949e]">
-                  "Led the migration of a legacy data warehouse to a modern cloud-based data lake architecture, improving query performance by 60% and reducing storage costs by 40%."
-                </p>
+                "Developed a web application replicating Behance's functionalities, empowering users to showcase and explore creative ideas on user interfaces".                </p>
                 <div className="mb-4">
                   <div className="font-mono text-sm text-gray-400 mb-2">$ project.impact</div>
                   <ul className="space-y-1 text-gray-400 font-mono">
                     <li class="flex items-center">
                       <span class="text-green-400 mr-2">→</span>
-                      "Reduced data processing time from hours to minutes"
+                      "Enabled creators to display portfolios with dynamic gallery features."
                     </li>
                     <li class="flex items-center">
                     <span class="text-green-400 mr-2">→</span>
-                    "Reduced data processing time from hours to minutes"                      
+                    "Implemented robust search, suggestion, and filtering systems based on recommendations, views, and likes."                      
                     </li>
                     <li class="flex items-center">
                     <span class="text-green-400 mr-2">→</span>
-                    "Reduced data processing time from hours to minutes"                      
+                    "Built a scalable application architecture suitable for future expansion."                      
                     </li>
                   </ul>
                 </div>
                 <div className="mb-4">
                   <div className="font-mono text-sm text-gray-400 mb-2">$ project.stack</div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">AWS S3</span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Snowflake</span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Apache Spark</span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Python</span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">dbt</span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Airflow</span>
+                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Reactjs</span>
+                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">CSS</span>
+                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">Vite</span>
                   </div>
                 </div>
               </div>

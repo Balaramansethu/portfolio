@@ -99,15 +99,15 @@ const LandingPage = () => {
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Transforming complex
-                          data challenges into
+                           challenges into
                         </div>
                         <div>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scalable
-                          solutions.Building robust data
+                          solutions,Building robust 
                         </div>
                         <div>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; pipelines and real-time
-                          analytics systems.
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; applications with better
+                          user experience.
                         </div>
                       </div>
                     </div>
