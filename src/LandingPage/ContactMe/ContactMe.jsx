@@ -1,5 +1,8 @@
 import React from "react";
 import "../ContactMe/ContactMe.css";
+import { TypeAnimation } from "react-type-animation";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const ContactMe = () => {
   return (
     <div className="min-h-screen py-20 jetbrains-mono bg-gray-950 text-white">
@@ -14,7 +17,7 @@ const ContactMe = () => {
           <div className="p-6 space-y-6 ">
             <div className="flex items-center gap-2 text-lg opacity-100">
               <span className="text-green-500">→</span>
-              <span className="text-[#e6edf3]">./contact-me</span>
+              <span  className="text-[#e6edf3]">./contact-me</span>
               <span className="w-2 h-5 bg-blue-400 animate-pulse"></span>
             </div>
             <div className="space-y-1">

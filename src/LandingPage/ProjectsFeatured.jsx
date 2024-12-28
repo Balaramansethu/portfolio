@@ -1,5 +1,6 @@
-import React, { useState } from "react";
-
+import React, { useState,useEffect  } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const ProjectsFeatured = () => {
   const [hoveredTechOne, setHoveredTechOne] = useState("");
   const [hoveredTechTwo, setHoveredTechTwo] = useState("");
@@ -16,6 +17,23 @@ const ProjectsFeatured = () => {
     setHoveredTechOne("");
     setHoveredTechTwo("");
   };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000, //2ms
+      offset: window.innerHeight * 0.4, //  40% of the screen height
+      once: true,
+    }); 
+  }, []);
+  if (window.innerHeight <= 320) {
+    useEffect(() => {
+      AOS.init({
+        duration: 2000, //2ms 
+        offset: window.innerHeight * 0.3, //  30% of the screen height
+        once: true,
+      }); 
+    }, []);
+  }
 
   const getHoverTextOne = () => {
     switch (hoveredTechOne) {
@@ -44,6 +62,8 @@ const ProjectsFeatured = () => {
         return "A modern build tool for fast and optimized frontend development.";
       case "Vercel":
         return "Deployment platform for applications with fast, serverless hosting.";
+      case "Circle CI":
+        return "Circle CI is a contious integration platform responsible for testing and staging pipelines"
     }
   };
 
@@ -58,7 +78,7 @@ const ProjectsFeatured = () => {
         </div>
         <div className="grid grid-cols-1 gap-12">
           {/* project card starts below here */}
-          <div className="bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-800 opacity-100">
+          <div  data-aos="fade-up" className="bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-800 opacity-100">
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-2/5 p-4">
                 <div className="h-full bg-gray-950 p-6 rounded-lg relative overflow-hidden group">
@@ -78,7 +98,7 @@ const ProjectsFeatured = () => {
                     </div>
                   </div>
                   <div className="relative h-full flex flex-col justify-center space-y-8 pb-24">
-                    {["React.js", "HTML", "CSS", "Vite", "Vercel"].map(
+                    {[ "HTML", "CSS", "React.js","Vite", "Vercel"].map(
                       (tech, index) => (
                         <div
                           key={index}
@@ -213,7 +233,7 @@ const ProjectsFeatured = () => {
             </div>
           </div>
           {/* project card starts below here */}
-          <div className="bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-800 opacity-100">
+          <div data-aos="fade-up" className="bg-gray-900 rounded-xl shadow-lg overflow-hidden border border-gray-800 opacity-100">
             <div className="flex flex-col md:flex-row">
               <div className="w-full md:w-2/5 p-4">
                 <div className="h-full bg-gray-950 p-6 rounded-lg relative overflow-hidden group">
@@ -233,7 +253,7 @@ const ProjectsFeatured = () => {
                     </div>
                   </div>
                   <div className="relative h-full flex flex-col justify-center space-y-8 pb-24">
-                    {["React.js", "HTML", "CSS", "Vite", "Vercel"].map(
+                    {["HTML", "CSS", "React.js", "Vite","Circle CI", "Vercel"].map(
                       (tech2, index) => (
                         <div
                           key={index}

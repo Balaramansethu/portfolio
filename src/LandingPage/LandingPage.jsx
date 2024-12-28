@@ -3,6 +3,10 @@ import "../LandingPage/LandingPage.css";
 import ImageBala from "../assets/image-port.jpg";
 import ProjectsFeatured from "./ProjectsFeatured";
 import ContactMe from "./ContactMe/ContactMe";
+import { TypeAnimation } from "react-type-animation";
+import AOS from "aos";
+
+
 const LandingPage = () => {
   const [tooltip, setTooltip] = useState("Copy");
 
@@ -45,16 +49,28 @@ const LandingPage = () => {
                       <line x1="12" x2="20" y1="19" y2="19"></line>
                     </svg>
                     <span class="font-mono relative">
-                      $ whoami<span class="text-blue-400">_</span>
+                    <TypeAnimation
+                          sequence={["$ whoami", 1000]}
+                          wrapper="span"
+                          speed={250}
+                          repeat={0}
+                          cursor={false}
+                        /><span class="text-blue-400">_</span>
                     </span>
                   </div>
                   <div className="space-y-2">
                     <div className="font-mono text-sm text-gray-400">
                       <span className="font-mono relative">
-                        $ user.role<span class="text-blue-400">_</span>
+                      <TypeAnimation
+                          sequence={["$ user.role", 1000]}
+                          wrapper="span"
+                          speed={250}
+                          repeat={0}
+                          cursor={false}
+                        /><span class="text-blue-400">_</span>
                       </span>
                     </div>
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-white">
+                    <h1  className="text-4xl sm:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white via-gray-200 to-white">
                       Balaraman
                     </h1>
                     <div className="font-mono text-[#8b949e]">
@@ -65,7 +81,13 @@ const LandingPage = () => {
                   <div className="space-y-2">
                     <div className="font-mono text-sm text-gray-400">
                       <span className="font-mono relative">
-                        $ user.description<span class="text-blue-400">_</span>
+                      <TypeAnimation
+                          sequence={["$ user.description", 1000]}
+                          wrapper="span"
+                          speed={250}
+                          repeat={0}
+                          cursor={false}
+                        /><span class="text-blue-400">_</span>
                       </span>
                     </div>
                     <div className="text-base sm:text-lg max-w-2xl font-mono leading-relaxed space-y-2 text-[#8b949e]">
@@ -99,15 +121,15 @@ const LandingPage = () => {
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <div>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Transforming complex
-                           challenges into
+                          challenges into
                         </div>
                         <div>
                           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; scalable
-                          solutions,Building robust 
+                          solutions,Building robust
                         </div>
                         <div>
-                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; applications with better
-                          user experience.
+                          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; applications with
+                          better user experience.
                         </div>
                       </div>
                     </div>
@@ -115,7 +137,13 @@ const LandingPage = () => {
                   <div className="space-y-2 opacity-100">
                     <div className="font-mono text-sm text-gray-400">
                       <span className="font-mono relative opacity-100">
-                        $ user.skills<span class="text-blue-400">_</span>
+                      <TypeAnimation
+                          sequence={["$ user.skills", 1000]}
+                          wrapper="span"
+                          speed={250}
+                          repeat={0}
+                          cursor={false}
+                        /><span class="text-blue-400">_</span>
                       </span>
                     </div>
                     <div className="flex flex-wrap justify-center lg:justify-start gap-3">
@@ -261,7 +289,13 @@ const LandingPage = () => {
                   <div className="space-y-2">
                     <div className="font-mono text-sm text-gray-400">
                       <span className="font-mono relative">
-                        $ user.socials <span class="text-blue-400">_</span>
+                      <TypeAnimation
+                          sequence={["$ user.socials", 1000]}
+                          wrapper="span"
+                          speed={250}
+                          repeat={0}
+                          cursor={false}
+                        /> <span class="text-blue-400">_</span>
                       </span>
                     </div>
                   </div>
@@ -345,35 +379,9 @@ const LandingPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="space-y-2">
-                    <div className="font-mono text-sm text-gray-400">
-                      <span className="font-mono relative">
-                        $ user.actions<span class="text-blue-400">_</span>
-                      </span>
-                    </div>
-                    <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-                      <a
-                        className="bg-gray-800 hover:bg-gray-700
-                                             text-white mt-2 px-6 py-2.5 rounded-lg font-mono group
-                                             border border-gray-700
-                                             transition-all hover:scale-105 relative overflow-hidden"
-                        href="#projects"
-                      >
-                        <span className="relative z-10">./view-projects</span>
-                      </a>
-                      <a
-                        className="bg-gray-800 hover:bg-gray-700
-                                             text-white mt-2 px-6 py-2.5 rounded-lg font-mono group
-                                             border border-gray-700
-                                             transition-all hover:scale-105 relative overflow-hidden"
-                        href="#contact-me"
-                      >
-                        <span className="relative z-10">./contact-me</span>
-                      </a>
-                    </div>
-                  </div>
+                  
                 </div>
-                <div className="w-full lg:w-1/2 relative hidden lg:block opacity-100 pb-36">
+                <div data-aos="fade-out" className="w-full lg:w-1/2 relative hidden lg:block opacity-100 pb-36">
                   <div className="relative aspect-square max-w-lg mx-auto">
                     <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/10 to-purple-500/10  rounded-3xl transform rotate-6  backdrop-blur-sm border border-white/10"></div>
                     <div className="absolute inset-0 bg-gradient-to-bl from-purple-500/10 to-blue-500/10  rounded-3xl transform -rotate-6  backdrop-blur-sm border border-white/10"></div>
@@ -398,10 +406,10 @@ const LandingPage = () => {
         </div>
       </div>
       <div>
-      <div class="relative bg-gray-50/50 dark:bg-gray-800/50 pb-1"></div>
-        <ProjectsFeatured/>
         <div class="relative bg-gray-50/50 dark:bg-gray-800/50 pb-1"></div>
-        <ContactMe/>
+        <ProjectsFeatured />
+        <div class="relative bg-gray-50/50 dark:bg-gray-800/50 pb-1"></div>
+        <ContactMe />
       </div>
     </div>
   );
