@@ -1,6 +1,7 @@
 import React, { useState,useEffect  } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import ShinyText from "../elements/ShinyText/ShinyText";
 const ProjectsFeatured = () => {
   const [hoveredTechOne, setHoveredTechOne] = useState("");
   const [hoveredTechTwo, setHoveredTechTwo] = useState("");
@@ -209,24 +210,12 @@ const ProjectsFeatured = () => {
                     $ project.stack
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">
-                      ReactJs
-                    </span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">
-                      ThreeJs
-                    </span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">
-                      HTML
-                    </span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">
-                      CSS
-                    </span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">
-                      Vite
-                    </span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">
-                      Vercel
-                    </span>
+                    <ShinyText text="ReactJs" disabled={false} speed={3} className='px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700 ' />
+                    <ShinyText text="ThreeJs" disabled={false} speed={3} className='px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700 ' />
+                    <ShinyText text="HTML" disabled={false} speed={3} className='px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700 ' />
+                    <ShinyText text="CSS" disabled={false} speed={3} className='px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700 ' />
+                    <ShinyText text="Vite" disabled={false} speed={3} className='px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700 ' />
+                    <ShinyText text="Vercel" disabled={false} speed={3} className='px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700 ' />
                   </div>
                 </div>
               </div>
@@ -364,15 +353,9 @@ const ProjectsFeatured = () => {
                     $ project.stack
                   </div>
                   <div className="flex flex-wrap gap-2">
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">
-                      Reactjs
-                    </span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">
-                      CSS
-                    </span>
-                    <span className="px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700">
-                      Vite
-                    </span>
+                  <ShinyText text="ReactJs" disabled={false} speed={3} className='px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700 ' />
+                  <ShinyText text="CSS" disabled={false} speed={3} className='px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700 ' />
+                  <ShinyText text="Vite" disabled={false} speed={3} className='px-3 py-1 bg-gray-800 text-gray-300 rounded-full text-sm font-mono border border-gray-700 ' />
                   </div>
                 </div>
               </div>
